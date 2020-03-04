@@ -5,7 +5,7 @@ import BoardDeleted from './BoardDeleted';
 import BoardArchived from './BoardArchived';
 import { connect } from 'react-redux';
 import { DragDropContext } from 'react-beautiful-dnd';
-import { reorderCard, clearLists } from '../../actions/board';
+import { reorderCard, unsetBoard } from '../../actions/board';
 import { updateBoard, deleteBoard } from '../../actions/boards';
 import AddButton from '../AddButton';
 import Loading from '../Loading';
@@ -27,8 +27,8 @@ class Board extends React.Component {
   }
 
   componentWillUnmount() {
-    const { clearLists } = this.props;
-    clearLists();
+    const { unsetBoard } = this.props;
+    unsetBoard();
   }
 
   toggleEditing() {
@@ -129,10 +129,6 @@ class Board extends React.Component {
     if (board.loading) {
       return <Loading />;
     } else {
-      if (board.boardID === null) {
-        return <BoardDeleted />;
-      }
-
       if (board.boardArchived) {
         return (
           <BoardArchived
@@ -150,7 +146,7 @@ class Board extends React.Component {
 
 Board.propTypes = {
   board: PropTypes.array,
-  clearLists: PropTypes.func.isRequired,
+  unsetBoard: PropTypes.func.isRequired,
   updateBoard: PropTypes.func.isRequired
 };
 
@@ -160,7 +156,7 @@ const mapStateToProps = state => ({
 
 export default connect(mapStateToProps, {
   reorderCard,
-  clearLists,
+  unsetBoard,
   updateBoard,
   deleteBoard
 })(Board);

@@ -1,20 +1,20 @@
 import axios from 'axios';
 import {
-  SET_LISTS,
+  SET_BOARD,
+  UNSET_BOARD,
   REORDER_CARD,
   ADD_LIST,
   DELETE_LIST,
-  CLEAR_LISTS,
   UPDATE_LIST
 } from './types';
 
-export function getLists(boardID) {
+export function getBoard(boardID) {
   return async dispatch => {
     try {
       const res = await axios.get(`/api/board?board_id=${boardID}`);
 
       dispatch({
-        type: SET_LISTS,
+        type: SET_BOARD,
         data: {
           lists: res.data.lists,
           boardTitle: res.data.title,
@@ -27,6 +27,14 @@ export function getLists(boardID) {
     } catch (error) {
       console.log(error.message);
     }
+  };
+}
+
+export function unsetBoard() {
+  return async dispatch => {
+    dispatch({
+      type: UNSET_BOARD
+    });
   };
 }
 
@@ -114,13 +122,5 @@ export function reorderCard(
     } catch (error) {
       console.log(error.message);
     }
-  };
-}
-
-export function clearLists() {
-  return async dispatch => {
-    dispatch({
-      type: CLEAR_LISTS
-    });
   };
 }

@@ -26,7 +26,9 @@ class Navbar extends React.Component {
       return (
         <nav
           className={`navbar ${
-            board.loading || board.boardArchived ? null : 'board-page'
+            board.loading || board.boardArchived || !board.boardID
+              ? null
+              : 'board-page'
           }`}
         >
           <div>

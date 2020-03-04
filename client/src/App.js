@@ -54,7 +54,7 @@ class App extends React.Component {
       backgroundColor: board.boardColor
     };
 
-    if (board.boardArchived) {
+    if (board.boardArchived || !board.boardID) {
       styles.backgroundColor = '#f9fafc';
     }
 

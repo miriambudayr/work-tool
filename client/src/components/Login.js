@@ -40,7 +40,7 @@ class Login extends React.Component {
 
     return (
       <div className='login-container'>
-        <h1>Log in to Trello</h1>
+        <h1>Log in to WorkTool</h1>
         <div>
           <div>
             <input

@@ -1,11 +1,5 @@
 import axios from 'axios';
-import {
-  SET_BOARDS,
-  SET_LISTS,
-  ADD_BOARD,
-  DELETE_BOARD,
-  UPDATE_BOARD
-} from './types';
+import { SET_BOARDS, ADD_BOARD, DELETE_BOARD, UPDATE_BOARD } from './types';
 
 export function getBoards() {
   return async dispatch => {

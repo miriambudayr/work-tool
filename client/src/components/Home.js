@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getLists } from '../actions/board';
+import { getBoard } from '../actions/board';
 import { addBoard, deleteBoard } from '../actions/boards';
 import { ReactComponent as CloseIcon } from './close.svg';
 import Loading from './Loading';
@@ -87,7 +87,7 @@ class Home extends React.Component {
   }
 
   renderBoards() {
-    const { boards, getLists } = this.props;
+    const { boards, getBoard } = this.props;
 
     return (
       <div className='home-inner'>
@@ -98,7 +98,7 @@ class Home extends React.Component {
                 to={`/board`}
                 className='board-container'
                 onClick={() => {
-                  getLists(board._id);
+                  getBoard(board._id);
                 }}
               >
                 <div
@@ -145,7 +145,7 @@ class Home extends React.Component {
 
 Home.propTypes = {
   boards: PropTypes.object,
-  getLists: PropTypes.func.isRequired,
+  getBoard: PropTypes.func.isRequired,
   addBoard: PropTypes.func.isRequired,
   deleteBoard: PropTypes.func.isRequired
 };
@@ -155,7 +155,7 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, {
-  getLists,
+  getBoard,
   addBoard,
   deleteBoard
 })(Home);
