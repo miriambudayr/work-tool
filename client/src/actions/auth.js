@@ -80,6 +80,7 @@ export function register({ name, email, password }) {
       const res = await axios.post('api/user', body, config);
       dispatch({ type: REGISTER_SUCCESSFUL, data: res.data });
       dispatch(loadUser());
+      dispatch(getBoards());
     } catch (error) {
       const errors = error.response.data.errors;
 
