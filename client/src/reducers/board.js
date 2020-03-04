@@ -19,7 +19,8 @@ const initialState = {
   loading: true,
   boardArchived: false,
   boardColor: null,
-  boardMembers: []
+  boardMembers: [],
+  set: false
 };
 
 function board(state = initialState, action) {
@@ -35,6 +36,7 @@ function board(state = initialState, action) {
         boardColor,
         boardMembers
       } = data;
+
       return {
         listsArray: [...lists],
         boardTitle,
@@ -42,7 +44,8 @@ function board(state = initialState, action) {
         loading: false,
         boardArchived,
         boardColor: boardColor,
-        boardMembers
+        boardMembers,
+        set: true
       };
     case DELETE_BOARD:
       return {
@@ -51,7 +54,8 @@ function board(state = initialState, action) {
         boardID: null,
         loading: false,
         boardColor: null,
-        boardMembers: []
+        boardMembers: [],
+        set: false
       };
     case UNSET_BOARD:
       return {
@@ -61,7 +65,8 @@ function board(state = initialState, action) {
         loading: true,
         boardArchived: true,
         boardColor: null,
-        boardMembers: []
+        boardMembers: [],
+        set: false
       };
     case UPDATE_BOARD:
       return updateBoard(state, action);
@@ -116,22 +121,11 @@ function updateList(state, action) {
 
 function addList(state, action) {
   let { list } = action.data;
-  let {
-    boardTitle,
-    listsArray,
-    boardID,
-    boardArchived,
-    boardColor,
-    boardMembers
-  } = state;
+  let { listsArray } = state;
 
   return {
     listsArray: [...listsArray, { ...list, itemsArray: [] }],
-    boardTitle,
-    boardID,
-    boardArchived,
-    boardColor,
-    boardMembers
+    ...state
   };
 }
 
