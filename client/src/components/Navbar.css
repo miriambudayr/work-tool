@@ -1,0 +1,34 @@
+.navbar {
+  align-items: center;
+  background: #026aa7;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 32px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+.navbar.board-page {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: #fff;
+  padding: 7.5px;
+  margin: 0 4px;
+}
+
+.navbar a:hover {
+  background: hsla(1, 50%, 20%, 0.2);
+}
+
+.nav-link {
+  background: hsla(0, 0%, 100%, 0.2);
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}

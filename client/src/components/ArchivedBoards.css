@@ -1,0 +1,157 @@
+.archived-boards-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+  position: fixed !important;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.archived-boards-inner {
+  background-color: #f4f5f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 200px auto;
+  overflow: hidden;
+  padding: 16px 20px;
+  width: 600px;
+}
+
+.archived-boards-list-name {
+  font-size: 14px;
+}
+
+.archived-boards-main {
+  flex: 1;
+  min-height: 24px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 5px;
+  position: relative;
+}
+
+.archived-boards-title {
+  color: #172b4d;
+}
+
+.archived-boards-main ul {
+  margin-left: 40px;
+  margin-bottom: 16px;
+}
+
+.archived-board {
+  align-items: center;
+  border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0;
+}
+
+.title-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+}
+
+.archived-board-title {
+  display: block;
+  flex: 1;
+  margin: 0 8px;
+  color: #172b4d;
+}
+
+.archive-icon {
+  fill: #757575;
+  float: left;
+  height: 22px;
+  margin-left: 4px;
+  margin-right: 8px;
+  margin-top: 7px;
+  width: 22px;
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.action-buttons .reopen {
+  align-items: center;
+  background-color: rgba(9, 30, 66, 0.04);
+  border: 0;
+  border-radius: 3px;
+  color: #172b4d;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 440;
+  height: 32px;
+  margin: 0 0 0 4px;
+  outline: 0;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.action-buttons .reopen:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.reopen-icon {
+  height: 15px;
+  margin-right: 6px;
+  margin-top: 2px;
+  width: 15px;
+}
+
+.action-buttons .delete {
+  align-items: center;
+  background-color: #cf513d;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 440;
+  height: 32px;
+  margin: 0 0 0 4px;
+  outline: 0;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.action-buttons .delete:hover {
+  background-color: #eb5a46;
+}
+
+.delete-icon {
+  fill: #fff;
+  height: 15px;
+  margin-right: 6px;
+  margin-top: 2px;
+  width: 15px;
+}
+
+.no-archived-boards {
+  flex: 1;
+  min-height: 24px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 5px;
+  position: relative;
+  width: 545px;
+}
+
+.no-archived-boards p {
+  background-color: rgba(9, 30, 66, 0.04);
+  border-radius: 3px;
+  color: #5e6c84;
+  display: block;
+  margin: 8px 0 12px;
+  padding: 24px 6px;
+  text-align: center;
+}

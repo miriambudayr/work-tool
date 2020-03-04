@@ -1,0 +1,185 @@
+.button-container-card {
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  margin: 1px;
+  opacity: 0.9;
+}
+
+.button-container-card:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.button-container-card .add-button {
+  border-style: none;
+  cursor: pointer;
+  float: left;
+  font-size: inherit;
+  height: 40px;
+}
+
+.button-container-card .add-icon {
+  fill: #5e6c84;
+  height: 12px;
+  margin-left: 10px;
+  vertical-align: bottom;
+  width: 16px;
+}
+
+.button-container-card .button-text {
+  color: #5e6c84;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 12px;
+  margin-left: 8px;
+  vertical-align: bottom;
+}
+
+.add-card-form {
+  background-color: #fff;
+  border-radius: 3px;
+  margin: 8px 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.add-card-form textarea {
+  border: none;
+  font-size: inherit;
+  max-height: 100px;
+  min-height: 70px;
+  outline: none;
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+}
+
+.add-card-controls {
+  float: left;
+}
+
+.add-card-controls .submit-button {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  font-size: 15px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  min-height: 32px;
+  padding: 6px 12px;
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  fill: #5e6c84;
+  height: 18px;
+  margin-left: 10px;
+  vertical-align: bottom;
+  width: 16px;
+}
+
+/* New List Button */
+
+.button-container-list {
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.24);
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  flex-basis: 300px;
+  height: 100%;
+  margin-right: 8px;
+  min-width: 300px;
+}
+
+.button-container-list:hover {
+  background-color: hsla(0, 0%, 100%, 0.32);
+}
+
+.button-container-list .add-button {
+  background: rgba(0, 0, 0, 0);
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  font-size: inherit;
+  height: 40px;
+  margin-top: 4px;
+}
+
+.button-container-list .add-icon {
+  fill: #fff;
+  height: 12px;
+  margin-left: 10px;
+  vertical-align: bottom;
+  width: 16px;
+}
+
+.button-container-list .button-text {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 12px;
+  margin-left: 8px;
+  vertical-align: bottom;
+}
+
+.add-list-form {
+  background-color: #ebecf0;
+  border-radius: 3px;
+  flex-basis: 300px;
+  margin-right: 8px;
+  min-width: 300px;
+  height: 100%;
+  padding: 8px;
+}
+
+.add-list-controls {
+  float: left;
+}
+
+.add-list-input {
+  border: none;
+  border-radius: 3px;
+  font-size: inherit;
+  max-height: 100px;
+  margin-bottom: 8px;
+  min-height: 70px;
+  outline: none;
+  overflow: hidden;
+  padding: 25px 12px;
+  resize: none;
+  width: 100%;
+}
+
+.add-list-form input::placeholder {
+  color: #757575;
+}
+
+.add-card {
+  padding: 0 12px 0 14px;
+}
+
+.add-card-form textarea::placeholder {
+  color: #757575;
+}
+
+.add-list-controls input[type='submit'] {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  font-size: 15px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  min-height: 32px;
+  padding: 6px 12px;
+}

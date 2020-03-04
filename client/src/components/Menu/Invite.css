@@ -1,0 +1,205 @@
+.invite-popup-container {
+  z-index: 999;
+  position: fixed;
+  top: 160px;
+  right: 40px;
+}
+
+.close-invite-popup {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  fill: #5e6c84;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  vertical-align: bottom;
+  width: 10px;
+}
+
+.invite-member {
+  background-color: #fff;
+  border: 1px solid #f4f5f7;
+  border-radius: 3px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 310px;
+}
+
+.invite-member-title {
+  border-bottom: 1px solid rgba(10, 32, 64, 0.15);
+  box-sizing: border-box;
+  color: #5e6c84;
+  cursor: default;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  line-height: 40px;
+  margin: 0 14px;
+  overflow: hidden;
+  padding: 0 36px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.invite-member-inner {
+  flex: 1 1 auto;
+  height: 100%;
+  padding: 0 12px 12px;
+}
+
+.member-search {
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 2px;
+  color: #172b4d;
+  font-size: 14px;
+  margin: auto;
+  margin-top: 12px;
+  min-height: 40px;
+  padding: 4px 8px;
+  position: relative;
+  width: 66%;
+}
+
+.member-search::placeholder {
+  color: #757575;
+}
+
+.member-search-button {
+  display: inline-block;
+  background: rgba(9, 30, 66, 0.09);
+  border-radius: 5px;
+  color: #172b4d;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 14px;
+  margin-right: 10px;
+  margin-top: 14px;
+  opacity: 1;
+  padding: 5.6px;
+  position: relative;
+}
+
+.member-search-button:hover {
+  background: #cfd8dc;
+}
+
+.users-scrollable {
+  flex: 1 1 auto;
+  height: 60%;
+  margin-right: 10px;
+  margin-top: 6px;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  padding: 0 0px 10px;
+}
+
+.users-scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.users-scrollable::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 99px;
+}
+
+.user-inner {
+  padding-left: 4px;
+  cursor: default;
+}
+
+.user-inner:hover {
+  background: #cfd8dc;
+  border-radius: 3px;
+}
+
+.user-info {
+  display: inline-block;
+  width: 200px;
+}
+
+.invite-user-button {
+  background-color: #4caf50;
+  bottom: 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 32px;
+  margin-top: 20px;
+  margin-left: 4px;
+  margin-right: 10px;
+  padding: 4px;
+  position: relative;
+}
+
+.invite-user-button:hover {
+  background-color: #50a73f;
+  border-color: #4b9e3b;
+}
+
+.user-name {
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.email {
+  color: #5e6c84;
+  font-size: 12px;
+}
+
+.user-icon {
+  background-color: #dfe1e6;
+  border-radius: 25em;
+  color: #172b4d;
+  cursor: pointer;
+  float: left;
+  height: 32px;
+  margin-top: 5px;
+  margin-right: 10px;
+  position: relative;
+  width: 32px;
+}
+
+.user-icon-text {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 32px;
+  left: 0;
+  line-height: 32px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+}
+
+.user-container {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.no-users-found {
+  background: rgba(9, 30, 66, 0.09);
+  border-radius: 6px;
+  color: #5e6c84;
+  cursor: default;
+  display: block;
+  padding: 24px 12px;
+  text-align: center;
+}

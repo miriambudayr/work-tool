@@ -1,0 +1,140 @@
+.home-container {
+  min-width: 1200px;
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+}
+
+.home-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.home-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px auto;
+  max-width: 1100px;
+}
+
+.home-title {
+  color: #172b4d;
+  flex: 1;
+  line-height: 54px;
+  padding: 0 8px 16px;
+  text-align: left;
+}
+
+.archived-boards-action {
+  color: #757575;
+  cursor: pointer;
+  line-height: 54px;
+  margin-left: 12px;
+  text-decoration: underline;
+}
+
+.board-container {
+  float: left;
+  max-height: 175px;
+  padding: 0 8px 16px;
+  width: 25%;
+}
+
+.board-card {
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+.board-card .board-card-title {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.new-board-controls {
+  float: left;
+  margin-top: 14px;
+}
+
+.new-board {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+  color: #172b4d;
+  cursor: pointer;
+  display: block;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+.new-board:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.new-board-container,
+.new-board-form {
+  float: left;
+  padding: 0 8px 16px;
+  width: 25%;
+}
+
+.new-board-form-inner {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+  cursor: pointer;
+  display: block;
+  height: 105px;
+  padding: 14px 12px;
+  width: 100%;
+}
+
+.new-board-form input {
+  background-color: #fafbfc;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 30px;
+  padding: 12px 9px;
+  width: 100%;
+}
+
+.new-board-form input::placeholder {
+  color: #757575;
+}
+
+.new-board-form input[type='submit'] {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  font-size: 15px;
+  height: 32px;
+  margin: 0 8px 8px 0;
+  min-height: 32px;
+  padding: 6px 12px;
+  width: 120px;
+}
+
+.cancel {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  fill: #5e6c84;
+  height: 18px;
+  margin-left: 10px;
+  vertical-align: bottom;
+  width: 16px;
+}

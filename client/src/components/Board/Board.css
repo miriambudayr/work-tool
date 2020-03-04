@@ -1,0 +1,121 @@
+.board-page-container {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.board-title-container {
+  color: #fff;
+  float: left;
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 600px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.board-title {
+  display: inline-block;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 500px;
+}
+
+.board-edit-input {
+  color: #172b4d;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 10px;
+  position: relative;
+  text-align: left;
+  width: 500px;
+}
+
+.board-header {
+  margin-top: 20px;
+}
+
+.lists-container {
+  bottom: 0;
+  left: 0;
+  margin-bottom: 5px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 10px 10px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  white-space: nowrap;
+}
+
+.lists-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+.lists-container::-webkit-scrollbar-button {
+  display: block;
+  height: 5px;
+  width: 5px;
+}
+
+.lists-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 99px;
+}
+
+.lists-container::-webkit-scrollbar-track-piece {
+  background: rgba(9, 30, 66, 0.08);
+  border-radius: 99px;
+}
+
+.lists-inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-height: 100%;
+}
+
+.board-not-found,
+.board-archived {
+  display: block;
+  margin: 75px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.board-archived h1 {
+  color: #5e6c84;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+.board-archived p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #5e6c84;
+  cursor: pointer;
+  margin-bottom: 14px;
+  text-decoration: underline;
+}
+
+.delete-board {
+  color: #5e6c84;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: underline;
+}
+
+.board-deleted {
+  margin-top: 40px;
+  color: #5e6c84;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.board-not-found h1 {
+  color: #5e6c84;
+  padding: 0;
+}
