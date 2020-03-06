@@ -124,8 +124,8 @@ function addList(state, action) {
   let { listsArray } = state;
 
   return {
-    listsArray: [...listsArray, { ...list, itemsArray: [] }],
-    ...state
+    ...state,
+    listsArray: [...listsArray, { ...list, itemsArray: [] }]
   };
 }
 
